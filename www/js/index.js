@@ -1,9 +1,28 @@
+var urlServidor = "http://localhost/php/ai/";
+
 function validar() {
-    loadingElement('btnValidarLogin', 'Salvando...')
 
-    openPage('principal.html')
+    loadingElement('btnValidarLogin', 'Validando...')
 
-    closeLoading('btnValidarLogin')
+    var url = urlServidor + "admin/logar";
+    var login = document.getElementById('login').value;
+    var senha = document.getElementById('senha').value;
+
+    MobileUI.ajax
+        .post(url)
+        .send({
+            login: login,
+            senha: senha
+        })
+        .end(function (error, res) {
+            console.log(error)
+            console.log(res)
+            // console.log(JSON.parse(res));
+
+            // openPage('principal.html')
+            closeLoading('btnValidarLogin')
+        });
+
 }
 
 // function esqueceuSenha() {
