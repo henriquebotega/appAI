@@ -10,17 +10,15 @@
     <div class="content has-header">
         <div class="list">
 
-            <div class="item" onclick="editContrato()">
-                <div class="left">
-                    <img class="avatar circle radius" src="img/clientes/prvida.jpg" />
-                </div>
+            <div class="item" data="colContratos" onclick="editContrato('${id}')">
+                <h2>#${id} - ${nome}</h2>
 
-                <h2>1547 - Parana Vida</h2>
-                <span class="text-small green radius padding">hospedagem</span>
+                <span class="text-small green radius padding">$$recorteString{observacao, 30}</span>
+
                 <div class="right">
-                    <i class="icon ion-android-happy text-green"></i>
+                    $$statusSituacao{id_situacao}
                     &nbsp;
-                    245,00
+                    R$ $$formatMoney{valor_total, 2, ',', '.'}
                 </div>
             </div>
 

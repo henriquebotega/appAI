@@ -1,0 +1,60 @@
+<div class="page">
+    <div class="header teal-500">
+        <div class="left">
+            <button class="icon ion-ios-arrow-back" onclick="backPage()"></button>
+        </div>
+        <h1 class="title align-center">Mensalidade</h1>
+    </div>
+
+    <div class="content has-header">
+
+        <div class="list">
+            <div class="item label-float">
+                <label>Nome</label>
+                <input type="text" id="mensalidadeNome">
+            </div>
+            <div class="item label-float">
+                <label>Numero</label>
+                <input type="text" id="mensalidadeNumero">
+            </div>
+            <div class="item label-float">
+                <label>Data de Vencimento</label>
+                <input type="text" id="mensalidadeDataVcto">
+            </div>
+            <div class="item label-float">
+                <label>Data de Pagamento</label>
+                <input type="text" id="mensalidadeDataPgto">
+            </div>
+            <div class="item label-float">
+                <label>Valor de Vencimento</label>
+                <input type="text" id="mensalidadeValorVcto">
+            </div>
+            <div class="item label-float">
+                <label>Valor de Pagamento</label>
+                <input type="text" id="mensalidadeValorPgto">
+            </div>
+            <div class="item label-float">
+                <label>Situação</label>
+                <input type="text" id="mensalidadeSituacao">
+            </div>
+            <div class="item">
+                <input type="hidden" id="mensalidadeID">
+                <button class="green small full" onclick="darBaixa()">Dar baixa</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden" id="template-alert-custom">
+        <div class="list">
+            <div class="item label-float">
+                <label>Data da baixa</label>
+                <input type="text" id="baixaData">
+            </div>
+            <div class="item label-float">
+                <label>Valor</label>
+                <input type="text" id="baixaValor">
+            </div>
+
+        </div>
+    </div>
+</div>

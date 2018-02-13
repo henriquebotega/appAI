@@ -14,38 +14,38 @@
 
             <div class="list">
                 <div class="item" onclick="openPage('cadastros')">
-                    <div class="left circle red padding">
+                    <div class="left circle blue padding">
                         <i class="icon ion-person"></i>
                     </div>
 
                     <h2>Clientes</h2>
                     <p class="text-grey">Informações cadastrais</p>
                     <div class="right">
-                        <span class="text-small border-green text-green radius padding">10</span>
+                        <span class="text-small border-blue text-blue radius padding" id="totalCadastros"></span>
                     </div>
                 </div>
 
                 <div class="item" onclick="openPage('contratos')">
-                    <div class="left circle red padding">
-                        <i class="icon ion-person"></i>
+                    <div class="left circle green padding">
+                        <i class="icon ion-settings"></i>
                     </div>
 
                     <h2>Contratos</h2>
                     <p class="text-grey">Prestação de serviços</p>
                     <div class="right">
-                        <span class="text-small border-green text-green radius padding">12</span>
+                        <span class="text-small border-green text-green radius padding" id="totalContratos"></span>
                     </div>
                 </div>
 
                 <div class="item" onclick="openPage('mensalidades')">
                     <div class="left circle red padding">
-                        <i class="icon ion-person"></i>
+                        <i class="icon ion-cash"></i>
                     </div>
 
                     <h2>Mensalidades</h2>
                     <p class="text-grey">Faturas em aberto</p>
                     <div class="right">
-                        <span class="text-small border-red text-red radius padding">2</span>
+                        <span class="text-small border-red text-red radius padding" id="totalMensalidades"></span>
                     </div>
                 </div>
             </div>
@@ -58,42 +58,39 @@
             <h1 class="title align-center">Principal</h1>
         </div>
 
-        <!-- <div class="content">
+        <div class="content">
             <div class="padding black-opacity-90 align-center">
                 <div id="progressProfile" class="progress-circle" title="PROFILE" color="blue" textColor="white" padding="20px" width="200px"
                     height="200px" trailColor="white-opacity-10" textSize="40px" titleSize="16px" textWeight="300" value="65"
                     text="%" strokeWidth="4" trailWidth="2">
                 </div>
+
                 <div class="row">
                     <div class="col">
-                        <div id="progressSteps" class="progress-circle" color="red" textColor="red-100" subTitle="steps" value="44" text="%" height="100px"
+                        <div id="progressSteps" class="progress-circle" color="red" textColor="red-100" subTitle="Passos" value="44" text="%" height="100px"
                             padding="10px" strokeWidth="4" trailWidth="4" trailColor="white-opacity-10">
                         </div>
                     </div>
                     <div class="col">
-                        <div id="progressRunning" class="progress-circle" color="purple" textColor="purple-100" subTitle="running" value="23" text="km"
+                        <div id="progressRunning" class="progress-circle" color="purple" textColor="purple-100" subTitle="Em andamento" value="23" text="km"
                             height="100px" padding="10px" strokeWidth="4" trailWidth="4" trailColor="white-opacity-10">
                         </div>
                     </div>
                     <div class="col">
-                        <div id="progressTasks" class="progress-circle" color="green" textColor="green-100" subTitle="tasks" value="79" text="/100"
+                        <div id="progressTasks" class="progress-circle" color="green" textColor="green-100" subTitle="Tarefas" value="79" text="/100"
                             height="100px" padding="10px" strokeWidth="4" trailWidth="4" trailColor="white-opacity-10">
                         </div>
                     </div>
                 </div>
-                <button class="margin opacity-40 border-white text-white radius" onclick="updateValuesProgressCircle()">UPDATE VALUES</button>
-                <button class="margin opacity-40 border-white text-white radius" onclick="ProgressCircle.rebind()">REBIND VALUES</button>
             </div>
 
             <div class="padding deep-purple align-center">
-                <div id="progressMetricUser" class="progress-semicircle" title="Your metric" subTitle="Compared by others" color="white"
+                <div id="progressMetricUser" class="progress-semicircle" title="Nivel" subTitle="Instabilidade da Internet" color="white"
                     textColor="white" textMargin="100px 0" width="250px" height="250px" trailColor="white-opacity-10" textSize="40px"
                     titleSize="16px" textWeight="300" value="91" text="%" strokeWidth="8" trailWidth="2">
                 </div>
-                <button class="margin opacity-40 border-white text-white radius" onclick="updateValuesProgressSemicircle()">UPDATE VALUES</button>
-                <button class="margin opacity-40 border-white text-white radius" onclick="ProgressSemicircle.rebind()">REBIND VALUES</button>
             </div>
-        </div> -->
+        </div>
 
     </div>
 
