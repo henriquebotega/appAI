@@ -15,12 +15,17 @@ function validar() {
             senha: senha
         })
         .end(function (error, res) {
-            console.log(error)
-            console.log(res)
-            // console.log(JSON.parse(res));
 
-            // openPage('principal.html')
             closeLoading('btnValidarLogin')
+            var ret = JSON.parse(res['text']);
+
+            if (error && res['status'] !== 200) {
+                alert(ret['error']);
+                return false;
+            }
+
+            localStorage.setItem('login', JSON.stringify(ret));
+            openPage('principal.html')
         });
 
 }
@@ -72,7 +77,24 @@ function salvarContrato() {
 }
 
 function darBaixa() {
+    alert({
+        title: 'Baixa de mensalidade',
+        template: 'template-alert-custom',
+        width: '90%',
+        buttons: [
+            {
+                label: 'Salvar',
+                onclick: salvarBaixa
+            },
+            {
+                label: 'Cancelar'
+            }
+        ]
+    });
+}
 
+function salvarBaixa() {
+    console.log('to aqui')
 }
 
 function salvarCadastro() {

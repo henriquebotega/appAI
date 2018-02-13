@@ -1,42 +1,56 @@
 <div class="page">
 
     <div class="padding grey-100 has-header has-sub-header">
-        <div class="menu teal-900 cover blend-multiply" id="menuDiscover" style="background-image:url('img/botega.jpg')">
-            <div class="cover align-center">
-                <img class="avatar circle border-white shadow" src="/img/botega.jpg">
-                <h1 class="text-teal-300">Anderson Botega</h1>
-                <p class="text-grey">henriquebotega@mail.com</p>
+        <div class="menu white" id="menuDiscover">
+            <div class="list no-border teal-900 cover blend-soft-light" style="background-image: url('img/botega.jpg')">
+                <div class="item">
+                    <div class="space-huge"></div>
+
+                    <img src="img/logo.png" class="left avatar circle">
+                    <h2 class="text-strong">Alvo Ideal</h2>
+                    <p>contato@alvoideal.com.br</p>
+                </div>
             </div>
-            <div class="list no-border">
-                <a class="item space-small" onclick="openPage('cadastros')">
-                    <div class="left">
-                        <i class="icon ion-ios-person-outline grey-300"></i>
+
+            <div class="list">
+                <div class="item" onclick="openPage('cadastros')">
+                    <div class="left circle red padding">
+                        <i class="icon ion-person"></i>
                     </div>
-                    <h1 class="text-grey-300">Cadastros</h1>
+
+                    <h2>Clientes</h2>
+                    <p class="text-grey">Informações cadastrais</p>
+                    <div class="right">
+                        <span class="text-small border-green text-green radius padding">10</span>
+                    </div>
+                </div>
+
+                <div class="item" onclick="openPage('contratos')">
+                    <div class="left circle red padding">
+                        <i class="icon ion-person"></i>
+                    </div>
+
+                    <h2>Contratos</h2>
+                    <p class="text-grey">Prestação de serviços</p>
                     <div class="right">
                         <span class="text-small border-green text-green radius padding">12</span>
                     </div>
-                </a>
-                <a class="item space-small" onclick="openPage('contratos')">
-                    <div class="left">
-                        <i class="icon ion-pricetags grey-300"></i>
+                </div>
+
+                <div class="item" onclick="openPage('mensalidades')">
+                    <div class="left circle red padding">
+                        <i class="icon ion-person"></i>
                     </div>
-                    <h1 class="text-grey-300">Contratos</h1>
+
+                    <h2>Mensalidades</h2>
+                    <p class="text-grey">Faturas em aberto</p>
                     <div class="right">
-                        <span class="text-small border-green text-green radius padding">12</span>
+                        <span class="text-small border-red text-red radius padding">2</span>
                     </div>
-                </a>
-                <a class="item space-small" onclick="openPage('mensalidades')">
-                    <div class="left">
-                        <i class="icon ion-cash grey-300"></i>
-                    </div>
-                    <h1 class="text-grey-300">Mensalidades</h1>
-                    <div class="right">
-                        <span class="text-small border-green text-green radius padding">12</span>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
+
         <div class="header teal">
             <div class="left">
                 <button class="icon ion-navicon-round" onclick="openMenu('menuDiscover')"></button>
