@@ -10,15 +10,10 @@
     <div class="content has-header">
         <div class="list">
 
-            <div class="item" onclick="editCadastro()">
-                <div class="left">
-                    <img class="avatar circle radius" src="img/clientes/prvida.jpg" />
-                </div>
-
-                <h2>Paraná Vida</h2>
-
-                <p class="text-grey"><i class="icon ion-ios-email"></i> contato@paranavida.com.br </p>
-                <p class="text-grey"><i class="icon ion-ios-telephone"></i> (44) 99946-4574 </p>
+            <div class="item" data="colCadastros" onclick="editCadastro('${id}')">
+                <h2>${nome}</h2>
+                <p class="text-grey"><i class="icon ion-ios-email"></i> ${email} </p>
+                <p class="text-grey"><i class="icon ion-ios-telephone"></i> ${tel_cel} </p>
             </div>
 
         </div>

@@ -10,20 +10,18 @@
     <div class="content has-header">
         <div class="list">
 
-            <div class="item">
-                <div class="left">
-                    <img class="avatar circle radius" src="img/clientes/prvida.jpg" />
-                </div>
+            <div class="item" data="colMensalidades" onclick="editMensalidade('${id}')">
+                <h2>#${id} - ${nome}</h2>
+                <p class="text-grey">
+                    <i class="icon ion-android-calendar"></i>${data_vcto}
+                    <i class="icon ion-android-calendar"></i>${data_pgto}
+                </p>
 
-                <h2>1547 - Parana Vida</h2>
-                <p><i class="icon ion-home"> 10/20/1994</i></p>
+                <span class="text-small blue radius padding">R$ $$formatMoney{valor_vcto, 2, ',', '.'}</span>
+                <span class="text-small green radius padding">R$ $$formatMoney{valor_pgto, 2, ',', '.'}</span>
 
-                <span class="text-small green radius padding">hospedagem</span>
-                <span class="text-small yellow radius padding">pendente</span>
-                <span class="text-small green radius padding">245,00</span>
-                
                 <div class="right">
-                    <button class="green small radius" onclick="darBaixa()">Dar baixa</button>
+                    $$statusSituacao{id_situacao}
                 </div>
             </div>
 
