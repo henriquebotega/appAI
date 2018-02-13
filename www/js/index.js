@@ -1,4 +1,5 @@
-var urlServidor = "http://localhost/php/ai";
+// var urlServidor = "http://localhost/php/ai";
+var urlServidor = "http://www.alvoideal.com.br/rest";
 
 function validar() {
 
